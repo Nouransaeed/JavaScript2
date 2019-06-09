@@ -24,5 +24,4 @@
     // add the newly created element and its content into the DOM 
     const currentDiv = document.getElementById("gameDiv"); 
     document.body.insertBefore(unorderedList, currentDiv); 
-  
 }
