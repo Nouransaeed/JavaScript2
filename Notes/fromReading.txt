@@ -1,0 +1,1 @@
+ES6 arrow function... => - look this up, allows anonymous function as variable (syntax: const variable = () => {...})
