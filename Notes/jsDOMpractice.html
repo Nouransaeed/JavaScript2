@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--Example of using a javascript script to write the date to HTML-->
+    <script>
+      document.write(Date());
+    </script>
+
+    <!--Example of changing existing p element-->
+    <p id="p1">Hello World!</p>
+    <script>
+      document.getElementById('p1').innerHTML = 'New text!';
+    </script>
+
+    <!--Example of changing existing h1 element using a variable-->
+    <h1 id="id01">Old Heading</h1>
+    <script>
+      var element = document.getElementById('id01');
+      element.innerHTML = 'New Heading';
+    </script>
+
+    <!--Example of changing the value of an HTML attribute with JS-->
+    <img id="myImage" src="smiley.gif" />
+    <script>
+      document.getElementById('myImage').src = 'landscape.jpg';
+    </script>
+  </body>
+</html>
