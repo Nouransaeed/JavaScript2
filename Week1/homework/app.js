@@ -1,7 +1,7 @@
 'use strict';
 
 {
-  const favoriteGames = [
+  const games = [
     // Replace with your own book titles
     'harry_potter_chamber_secrets',
     'call_of_the_wild',
@@ -11,14 +11,14 @@
   ];
 
   // Replace with your own code
-  console.log(favoriteGames);
+  console.log(games);
  // document.body.onload = addElement;
  // function displayGameTitles = () => { 
    
     let unorderedList = document.createElement("ul"); 
-    for (const gameIndex in favoriteGames) { 
+    for (const game of games) { 
       const listItem = document.createElement("li"); 
-      listItem.textContent = favoriteGames[gameIndex];
+      listItem.textContent = game;
       unorderedList.appendChild(listItem); 
   }
     // add the newly created element and its content into the DOM 
