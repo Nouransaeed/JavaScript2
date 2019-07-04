@@ -1,1 +1,0 @@
-document.xxxx : document is what tells the javascript to alter the html document that it's attached to 
