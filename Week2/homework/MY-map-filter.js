@@ -1,4 +1,5 @@
 'use strict';
+/* eslint */
 /* 1_1 Say you would like to write a program that doubles the odd numbers in an array and throws away the even numbers.
 Your solution could be something like this:
 
@@ -44,4 +45,3 @@ module.exports = {
   myNumbers,
   doubleOddNumbers,
 };
-
