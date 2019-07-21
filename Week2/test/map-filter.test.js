@@ -13,13 +13,8 @@ describe('map_filter', () => {
   });
 });
 
-// describe('hi',()=> {
-//   test('return hi',() => {
-//     expect(hi()).toEqual('hi');
-//   });
-// });
-
-// describe('add_numbers', ()=>{
-//   test('result ->')
-// }
-// )
+describe('hi',()=> {
+  test('return hi',() => {
+    expect(hi()).toEqual('hi');
+  });
+});
