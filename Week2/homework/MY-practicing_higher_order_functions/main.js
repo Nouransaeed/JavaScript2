@@ -1,3 +1,5 @@
+/*following the https://www.youtube.com/watch?v=rRgD1yVwIvE tutorial */
+
 const shoppingCardItems = [
     {name:"yogurt", category: "Diary", start: 07, end: 09},
     {name:"white bun", category: "Bread", start: 09, end: 10},
