@@ -5,7 +5,7 @@
 // }
 // setTimeout(doIt, 5000);
 
-//Test by copy-pasting this function to the browser console
+//Test this code by copy-pasting the whole foo and bar functions to the browser console
 function foo(func) {
   // What to do here?
   // Replace this comment and the next line with your code
