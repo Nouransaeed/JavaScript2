@@ -9,9 +9,41 @@ async function getRandomAdvice() {
   return adviceData.slip.advice;
 }
 
+let allAdvice=[]
+const adviceEl = document.getElementById('advice');
+
+
+function updateDOM() {
+  adviceEl.innerHTML= '';
+
+  allAdvice.forEach((advice, index)=> {
+
+  
+  const adviceItem=document.createElement ('li')
+  adviceEl.appendChild(adviceItem);
+  adviceItem.innerText=advice;
+
+  const removeButton =document.createElement('button')
+  removeButton.innerText='remove';
+  adviceItem.appendChild(removeButton);
+  removeButton.addEventListener('click',() => deleteAdvice(index));_
+})
+   }
+   function deleteAdvice (index){
+     allAdvice.splice(index,1);
+     updateDOM();
+   }
+   function upcaseAllAdvice (){
+    allAdvice=allAdvice.map(advice => advice.toUpperCase());
+    updateDOM();
+    
 async function setRandomAdvice() {
-  const adviceEl = document.getElementById('advice');
-  adviceEl.innerText = await getRandomAdvice();
+  allAdvice.push (await getRandomAdvice());
+  updateDOM();
 }
 
 setRandomAdvice();
+
+document.getElementById('add-advice').addEventListener('click', setRandomAdvice);
+
+document.getElementById('upcase-everything').addEventListener('click', upcaseAllAdvice);
