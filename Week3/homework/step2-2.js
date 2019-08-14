@@ -1,23 +1,43 @@
 'use strict';
 
-function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const numbers = [];
+{
+  function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
-  // Replace this comment and the next line with your code
-  console.log(startIndex, stopIndex, threeCallback, fiveCallback, numbers);
-}
+  const numbers = [];
+    for (let i = startIndex; i <= stopIndex; i++) {
+
+      numbers.push(i);
+
+      //A callback to call if the number is divisible by 3
+
+      if (i % 3 === 0) {
+
+        threeCallback(i);
+
+      }
+
+      //A callback by 5 
+
+      if (i % 5 === 0) {
+
+        fiveCallback(i);
+
+      }}}
+
+
+threeFive()
 
 function sayThree(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+   console.log(number, 'value is divisible by 3');
 }
+
+
 
 function sayFive(number) {
-  // Replace this comment and the next line with your code
-  console.log(number);
+  console.log(number, 'value is divisible by 5');
 }
-
 threeFive(10, 15, sayThree, sayFive);
-
-// Do not change or remove anything below this line
 module.exports = threeFive;
+
+} 
+//finished 
